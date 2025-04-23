@@ -522,7 +522,48 @@ body {
 }
 
 
-    </style>
+</style>
+
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 800px;
+      line-height: 1.8;
+      color: #333333;
+    }
+
+    .card h1 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      color: #0077b6;
+      font-weight: 600;
+    }
+
+    .keywords {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -1017,13 +1058,30 @@ body {
 
     
      <p><strong style="color:indianred;">Objectives</strong> 
-        Our lab conduct extensive research in the field of quantum wavefunction optimization algorithms, 
-        focusing on developing novel approaches to enhance the efficiency and accuracy of quantum computations. 
-        Our work explores the application of optimization techniques to solve complex problems in quantum mechanics, particularly in the context of improving the 
-        accuracy of quantum wavefunction solutions. Through the integration of metaheuristic algorithms such as Genetic Algorithms, Particle Swarm Optimization, and 
-        Simulated Annealing, our research investigate methods to minimize energy states and optimize parameters for quantum systems. 
-        This research not only contributes to the theoretical advancement of quantum mechanics but also offers practical implications for 
-        optimizing quantum computing processes, enhancing computational power, and improving algorithmic efficiency in real-world applications. 
+        <div class="card">
+            <h1>Quantum Wavefunction Optimization Research</h1>
+            <p>
+              Our lab conducts extensive research in the field of 
+              <span class="highlight">quantum wavefunction optimization algorithms</span>, focusing on developing novel approaches 
+              to enhance the efficiency and accuracy of quantum computations.
+            </p>
+            <p>
+              Our work explores the application of <span class="highlight">optimization techniques</span> to solve complex problems in quantum mechanics, 
+              particularly in the context of improving the accuracy of quantum wavefunction solutions.
+            </p>
+            <p>
+              Through the integration of metaheuristic algorithms such as 
+              <span class="keywords">Genetic Algorithms</span>, 
+              <span class="keywords">Particle Swarm Optimization</span>, and 
+              <span class="keywords">Simulated Annealing</span>, our research investigates methods to minimize energy states 
+              and optimize parameters for quantum systems.
+            </p>
+            <p>
+              This research not only contributes to the theoretical advancement of quantum mechanics but also offers 
+              practical implications for optimizing quantum computing processes, enhancing computational power, and 
+              improving algorithmic efficiency in real-world applications.
+            </p>
+          </div>
 </div>
 
 
