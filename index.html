@@ -433,6 +433,63 @@ body {
     justify-content: center;       /* Center items in the container */
 }
 
+/* Book style */
+
+.book-list {
+    display: flex;                  /* Use flexbox for horizontal alignment */
+    gap: 15px;                     /* Space between country items */
+    justify-content: center;       /* Center the items in the container */
+    flex-wrap: nowrap;             /* Prevent items from wrapping */
+    overflow-x: auto;              /* Enable horizontal scrolling if needed */
+    padding: 20px 0;               /* Vertical padding for the list */
+}
+
+.book {
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            width: 120px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.book:hover {
+    transform: translateY(-5px);  /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.book-name {
+    font-size: 1em;                /* Font size for country name */
+    font-weight: bold;             /* Bold text */
+    color: #555;                   /* Text color */
+}
+
+.book img {
+    width: 120px;                   /* Width of the country flag image */
+    height: auto;                  /* Maintain aspect ratio */
+    margin-bottom: 10px;           /* Space between image and country name */
+    border-radius: 5px;            /* Rounded corners for images */
+}
+
+
+
+.book-container {
+    display: flex;                  /* Flexbox for wrapping content */
+    flex-wrap: wrap;               /* Allow items to wrap */
+    gap: 10px;                     /* Space between items */
+    justify-content: center;       /* Center items in the container */
+}
+
+
+
+
 
 /* Styling for the cartoon pop-up */
 .cartoon-popup {
@@ -667,10 +724,10 @@ body {
 <body>
     <div id="books" class="tab-content">
     <h3>Books</h3>
-    <div class="country-list">
-        <div class="country">
+    <div class="book-list">
+        <div class="book">
             <img src="img/book3.jpg" alt="Ambiguous Set Book" width="120" height="160" style="border-radius: 6px;">
-            <div class="country-name"> <strong>P. Singh.</strong> A Journey into Ambiguous Set Theory: Exploring Ambiguity. Publisher:
+            <div class="book-name"> <strong>P. Singh.</strong> A Journey into Ambiguous Set Theory: Exploring Ambiguity. Publisher:
                Cambridge University Press, UK, ISBN: 1-0364-4111-3, Year: 2025</div>
         </div>
 
